@@ -17,13 +17,13 @@
             android:id="@+id/button2"
             android:layout_width="312dp"
             android:layout_height="wrap_content"
-            android:text="Отримати список" />
+            android:text="@string/getlist" />
 
         <Button
             android:id="@+id/button1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Занести в базу" />
+            android:text="@string/add_str" />
 
     </LinearLayout>
 

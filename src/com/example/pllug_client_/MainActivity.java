@@ -30,7 +30,7 @@ public class MainActivity extends Activity {
 					startActivity(intent);
 				
 				}else{
-					Toast.makeText(MainActivity.this, "Sorry:) Don't internet connection",Toast.LENGTH_LONG).show();
+					Toast.makeText(MainActivity.this, "Sorry:) not internet connection",Toast.LENGTH_SHORT).show();
 					
 				}
 					
@@ -48,7 +48,7 @@ public class MainActivity extends Activity {
 					Intent intent=new Intent(MainActivity.this,GetListActivity.class);
 					startActivity(intent);
 				}else{
-					Toast.makeText(MainActivity.this, "Sorry:) Don't internet connection",Toast.LENGTH_LONG).show();
+					Toast.makeText(MainActivity.this, "Sorry:) not internet connection",Toast.LENGTH_SHORT).show();
 				}
 				
 			}

@@ -4,5 +4,10 @@
     <string name="app_name">PLLUG_Client_</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="add_str">Прізвище</string>
+    <string name="lastname">Додати в базу</string>
+    <string name="firstname">Ім\'я</string>
+    <string name="getlist"> Отримати список</string>
+   
 
 </resources>

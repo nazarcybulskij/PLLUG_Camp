@@ -8,13 +8,12 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.app.Activity;
-import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
+
 
 public class GetListActivity extends Activity {
 	
@@ -96,11 +95,8 @@ public class GetListActivity extends Activity {
 		
 		protected String doInBackground(Void... params) {
 			// TODO Auto-generated method stub
-			String asd=null;
-		    
-		     asd=http.downloadList("http://asd.nazarzh.cloudbees.net/asd");
-		   
-			return asd;
+		 		 	   
+			return HttpList.downloadList("http://asd.nazarzh.cloudbees.net/asd");
 		}
 
 		@Override

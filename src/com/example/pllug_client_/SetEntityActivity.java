@@ -1,15 +1,9 @@
 package com.example.pllug_client_;
 
-import java.text.BreakIterator;
-import java.util.ArrayList;
 
-import com.example.pllug_client_.GetListActivity.MyTask;
 
 import android.app.Activity;
-import android.os.AsyncTask;
 import android.os.Bundle;
-import android.text.Editable;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -63,7 +57,7 @@ public class SetEntityActivity extends Activity {
 							}
 						}).start();
 					}else{
-						Toast.makeText(SetEntityActivity.this, "Sorry:) Don't internet connection ",Toast.LENGTH_LONG).show();
+						Toast.makeText(SetEntityActivity.this, "Sorry:) not internet connection ",Toast.LENGTH_SHORT).show();
 					}
 						
 					
@@ -79,27 +73,7 @@ public class SetEntityActivity extends Activity {
 		
 	}
 	
-	class my_task extends AsyncTask<String, Void, Void>{
-		
-
-	  
-
 	
-	
-	
-
-
-
-
-
-		@Override
-		protected Void doInBackground(String... params) {
-			new sendGet(params[0],params[1]).send();
-			return null;
-		}
-
-		
-	}
 	
 
 }

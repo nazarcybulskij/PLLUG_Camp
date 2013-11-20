@@ -10,22 +10,14 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
-
-
 import android.util.Log;
 
-public class HttpList {
-	
-	
-	
-	
-	
+public class HttpList {	
 	
 	
 	
 	private static final String Tag="asd";
 	public static   String downloadList (String uri) {
-		String  out=" ";
 		StringBuilder temp=null;
 		DefaultHttpClient cient=new DefaultHttpClient();
 		try {
