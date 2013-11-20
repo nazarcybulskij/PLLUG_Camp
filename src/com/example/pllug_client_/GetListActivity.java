@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 
 public class GetListActivity extends Activity {
@@ -42,12 +43,16 @@ public class GetListActivity extends Activity {
 			}
 			JSONArray ja = null;
 			try {
+				if (jsonst==null){
+					Toast.makeText(this, "JSON is null", Toast.LENGTH_SHORT).show();
+				}
 			   ja=new JSONArray(jsonst);
 			} catch (JSONException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			
+				
 			//Log.i(TAG,String.valueOf(ja.length()));
 			
 			JSONObject jsondata;
